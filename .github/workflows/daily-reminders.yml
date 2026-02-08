@@ -3,46 +3,49 @@
 on:
   schedule:
     - cron: '30 12 * * *'  # 9:30 AM BRT (UTC-3)
-  workflow_dispatch:  # Manual trigger
-
-permissions:
-  contents: write  # This fixes the 403 error
+  workflow_dispatch:
 
 jobs:
-  check-reminders:
+  send-all-reminders:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check reminders and notify
+      - name: Send all reminders via Telegram (PowerShell)
+        shell: pwsh
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          TODAY=$(date +%Y-%m-%d)
-          echo "Checking reminders for $TODAY"
-          
-          # Read reminders file and find today's items
-          REMINDERS=$(grep "$TODAY" reminders/README.md | grep -v "^#" || true)
-          
-          if [ -n "$REMINDERS" ]; then
-            echo "Found reminders for today:"
-            echo "$REMINDERS"
-            
-            # Send Telegram notification
-            MESSAGE="📅 *Reminders for today:*%0A%0A$REMINDERS"
-            curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-              -d chat_id="$TELEGRAM_CHAT_ID" \
-              -d text="$MESSAGE" \
-              -d parse_mode="Markdown"
-          else
-            echo "No reminders for today"
-          fi
-
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git diff --staged --quiet || git commit -m "Update reminders $(date +%Y-%m-%d)"
-          git push
+          $file = 'reminders/README.md'
+          if (-not (Test-Path $file)) {
+            Write-Host "Reminders file not found: $file"
+            exit 0
+          }
+          $lines = Get-Content $file -Raw -ErrorAction Stop -Encoding UTF8 -ReadCount 0
+          $all = $lines -split "`n"
+          $start = $all.IndexOf('## Active Reminders')
+          $end = $all.IndexOf('## Completed')
+          if ($start -lt 0) { Write-Host "Active section not found"; exit 0 }
+          if ($end -lt 0) { $end = $all.Length }
+          $tableLines = $all[($start+1) .. ($end-1)]
+          # Select rows that start with '|' and have a leading number column e.g. "| 1 | ..."
+          $rows = $tableLines | Where-Object { $_ -match '^\|\s*\d+\s*\|' }
+          if (-not $rows -or $rows.Count -eq 0) {
+            Write-Host "No reminders found in Active Reminders"
+            exit 0
+          }
+          foreach ($r in $rows) {
+            $cols = ($r -split '\|') | ForEach-Object { $_.Trim() }
+            # columns: ['', '#', 'Reminder', 'Date', 'Time', 'Status', 'Calendar', '']
+            # adjust indexes if table has fewer columns
+            $num = if ($cols.Count -gt 1) { $cols[1] } else { "" }
+            $rem = if ($cols.Count -gt 2) { $cols[2] } else { $cols[-1] }
+            $date = if ($cols.Count -gt 3) { $cols[3] } else { "" }
+            $time = if ($cols.Count -gt 4) { $cols[4] } else { "" }
+            $msg = "📌 Reminder $num`n$rem`nDate: $date  Time: $time"
+            Write-Host "Sending: $msg"
+            Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_BOT_TOKEN/sendMessage" `
+              -Method Post -Body @{ chat_id = $env:TELEGRAM_CHAT_ID; text = $msg } -ErrorAction Stop
+            Start-Sleep -Seconds 1
+          }
