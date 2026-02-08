@@ -8,7 +8,7 @@
 
 ### In Progress
 
-<!-- #in-progress  change tag and move here when starting -->
+<!-- #in-progress — change tag and move here when starting -->
 
 ### Blocked
 
@@ -16,10 +16,10 @@
 
 ### Backlog
 
-- [ ] Update Hackolade Models #backlog #JM
-- [ ] Invoices #backlog #Personal
-- [ ] EHS Delivery #backlog #EHS
-- [ ] Pay Airbnb #backlog #Personal
+- [ ] 1. Update Hackolade Models #backlog #JM
+- [ ] 2. Invoices #backlog #Personal
+- [ ] 3. EHS Delivery #backlog #EHS
+- [ ] 4. Pay Airbnb #backlog #Personal
 
 ### Done
 
