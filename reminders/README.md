@@ -16,9 +16,9 @@ Examples:
 
 ## Active Reminders
 
-| # | Reminder | Date | Time | Status |
-|---|----------|------|------|--------|
-| 1 |  |  |  |  |
+| # | Reminder | Date | Time | Status | Calendar |
+|---|----------|------|------|--------|----------|
+| 1 | Test reminder - system working! | 2026-02-08 | 15:00 | pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+-+system+working!&dates=20260208T180000Z/20260208T183000Z&details=From+Second+Memory) |
 
 ---
 

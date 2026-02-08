@@ -6,11 +6,9 @@
 
 ## Due Today
 
-<!-- Auto-updated daily at 9:30 AM BRT -->
-
-| # | Reminder | Time |
-|---|----------|------|
-| — | No reminders today | — |
+| # | Reminder | Time | Calendar |
+|---|----------|------|----------|
+| 1 | Test reminder - system working! | 15:00 | [Add](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+-+system+working!&dates=20260208T180000Z/20260208T183000Z&details=From+Second+Memory) |
 
 ---
 
@@ -33,7 +31,7 @@
 
 ### Done
 
-<!-- #done — check box [x] when complete, move here -->
+<!-- #done  check box [x] when complete, move here -->
 
 ---
 
@@ -64,6 +62,7 @@
 
 | Date | Item | Location |
 |------|------|----------|
+| 2026-02-08 | Test reminder added | reminders/README.md |
 | 2026-02-08 | Added reminders system | reminders/README.md |
 | 2026-02-08 | Added 4 backlog tasks | tasks.md |
 | 2026-02-08 | Quick note: Arthur Miller Youtube | inbox.md |
