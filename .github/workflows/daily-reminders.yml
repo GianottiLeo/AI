@@ -5,6 +5,9 @@ on:
     - cron: '30 12 * * *'  # 9:30 AM BRT (UTC-3)
   workflow_dispatch:  # Manual trigger
 
+permissions:
+  contents: write  # This fixes the 403 error
+
 jobs:
   check-reminders:
     runs-on: ubuntu-latest
@@ -27,7 +30,7 @@ jobs:
             echo "$REMINDERS"
             
             # Send Telegram notification
-            MESSAGE=" *Reminders for today:*%0A%0A$REMINDERS"
+            MESSAGE="📅 *Reminders for today:*%0A%0A$REMINDERS"
             curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
               -d chat_id="$TELEGRAM_CHAT_ID" \
               -d text="$MESSAGE" \
@@ -35,12 +38,6 @@ jobs:
           else
             echo "No reminders for today"
           fi
-
-      - name: Update README Due Today section
-        run: |
-          TODAY=$(date +%Y-%m-%d)
-          # Script to update Due Today section would go here
-          # For now, manual updates via PR
 
       - name: Commit changes
         run: |
