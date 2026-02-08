@@ -6,9 +6,12 @@
 
 ## Due Today
 
+<!-- Auto-updated daily at 9:30 AM BRT -->
+
 | # | Reminder | Time | Calendar |
 |---|----------|------|----------|
 | 1 | Test reminder - system working! | 15:00 | [Add](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+-+system+working!&dates=20260208T180000Z/20260208T183000Z&details=From+Second+Memory) |
+| 2 | Test reminder 2 - immediate check | 15:30 | [Add](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+2+-+immediate+check&dates=20260208T183000Z/20260208T190000Z&details=From+Second+Memory) |
 
 ---
 
