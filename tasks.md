@@ -1,16 +1,20 @@
 ﻿# Tasks
 
 > All active tasks. Archive completed tasks older than 2 weeks (unless #long-term).
+> 
+> **Status tags:** #backlog  #in-progress  #blocked  #done
+> 
+> Change the tag manually to update status. Check [x] when complete.
 
 ---
 
 ## In Progress
 
-<!-- #in-progress tasks here -->
+<!-- #in-progress  change tag and move here when starting -->
 
 ## Blocked
 
-<!-- #blocked tasks here -->
+<!-- #blocked  change tag and move here when stuck -->
 
 ## Backlog
 
@@ -21,4 +25,4 @@
 
 ## Done
 
-<!-- #done tasks here - move to archive after 2 weeks -->
+<!-- #done  check box [x] when complete, move here -->

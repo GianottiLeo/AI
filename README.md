@@ -4,12 +4,35 @@
 
 ---
 
+## Tasks
+
+### In Progress
+
+<!-- #in-progress  change tag and move here when starting -->
+
+### Blocked
+
+<!-- #blocked  change tag and move here when stuck -->
+
+### Backlog
+
+- [ ] Update Hackolade Models #backlog #JM
+- [ ] Invoices #backlog #Personal
+- [ ] EHS Delivery #backlog #EHS
+- [ ] Pay Airbnb #backlog #Personal
+
+### Done
+
+<!-- #done  check box [x] when complete, move here -->
+
+---
+
 ## Quick Links
 
 | Section | Description |
 |---------|-------------|
 | [Inbox](inbox.md) | Quick notes and fleeting ideas |
-| [Tasks](tasks.md) | Active tasks by status |
+| [Tasks](tasks.md) | Full task list (mirror) |
 | [Learning](learning/README.md) | Lifelong knowledge by topic |
 | [Projects](projects/README.md) | Project-specific notes |
 | [Snippets](snippets/sql/README.md) | Code snippets |
@@ -20,17 +43,13 @@
 
 ---
 
-## Pinned Tasks
+## Pinned
 
-<!-- Manually curate important tasks here -->
-
-- None yet
+<!-- Manually pin important items here -->
 
 ---
 
 ## Recent Activity
-
-<!-- Auto-updated by GitHub Action -->
 
 | Date | Item | Location |
 |------|------|----------|
