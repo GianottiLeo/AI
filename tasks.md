@@ -14,7 +14,10 @@
 
 ## Backlog
 
-<!-- #backlog tasks here -->
+- [ ] Update Hackolade Models #backlog #JM
+- [ ] Invoices #backlog #Personal
+- [ ] EHS Delivery #backlog #EHS
+- [ ] Pay Airbnb #backlog #Personal
 
 ## Done
 
