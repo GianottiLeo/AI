@@ -4,11 +4,21 @@
 
 ---
 
+## Due Today
+
+<!-- Auto-updated daily at 9:30 AM BRT -->
+
+| # | Reminder | Time |
+|---|----------|------|
+| — | No reminders today | — |
+
+---
+
 ## Tasks
 
 ### In Progress
 
-<!-- #in-progress — change tag and move here when starting -->
+<!-- #in-progress  change tag and move here when starting -->
 
 ### Blocked
 
@@ -23,7 +33,7 @@
 
 ### Done
 
-<!-- #done  check box [x] when complete, move here -->
+<!-- #done — check box [x] when complete, move here -->
 
 ---
 
@@ -33,6 +43,7 @@
 |---------|-------------|
 | [Inbox](inbox.md) | Quick notes and fleeting ideas |
 | [Tasks](tasks.md) | Full task list (mirror) |
+| [Reminders](reminders/README.md) | Scheduled reminders |
 | [Learning](learning/README.md) | Lifelong knowledge by topic |
 | [Projects](projects/README.md) | Project-specific notes |
 | [Snippets](snippets/sql/README.md) | Code snippets |
@@ -53,5 +64,6 @@
 
 | Date | Item | Location |
 |------|------|----------|
+| 2026-02-08 | Added reminders system | reminders/README.md |
 | 2026-02-08 | Added 4 backlog tasks | tasks.md |
 | 2026-02-08 | Quick note: Arthur Miller Youtube | inbox.md |
