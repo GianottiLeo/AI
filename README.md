@@ -23,9 +23,7 @@
 ### Backlog
 
 - [ ] 1. Update Hackolade Models #backlog #JM
-- [ ] 2. Invoices #backlog #Personal
-- [ ] 3. EHS Delivery #backlog #EHS
-- [ ] 4. Pay Airbnb #backlog #Personal
+- [ ] 2. EHS Feedback #backlog #EHS
 
 ### Done
 
