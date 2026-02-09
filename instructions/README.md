@@ -39,13 +39,15 @@ Inbox rules
 - Append quick notes at top of inbox.md, each line is a separate item. Use hashtags for topics.
 - Periodically (user decides) sort inbox into learning, projects, tasks, or delete.
 
-Reminders
+Reminder rules
+- Default duration: 30 minutes (unless specified otherwise)
 - Format in reminders/README.md as a table row:
-  | # | Reminder | Date | Time | Status | Calendar |
+  | # | Reminder | Date | Time | Status | Calendar | Notes |
 - When user requests a reminder, create a row with a Google Calendar "Add" link:
   `https://calendar.google.com/calendar/render?action=TEMPLATE&text=<URL-ENCODED>&dates=<START>/<END>&details=From+Second+Memory`
-- Use UTC conversion for the URL (Z suffix). Example: 2026-02-09 09:00 BRT → 20260209T120000Z.
-- For notifications: only send via Telegram and/or email from the scheduled workflow. Do not push changes from the workflow (create PRs for README edits unless user asks for auto-commit with PAT).
+- Use UTC conversion for the URL (Z suffix). Example: 2026-02-09 09:00 BRT → 20260209T120000Z
+- END time = START time + 30 minutes (default)
+- For notifications: send via Telegram from the scheduled workflow.
 
 Reminders workflow behavior
 - Daily scheduled workflow runs at repo cron (9:30 BRT).
