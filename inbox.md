@@ -9,3 +9,4 @@
 ## 2026-02-08
 
 - Arthur Miller Youtube
+- USDT Binance
