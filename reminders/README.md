@@ -1,4 +1,4 @@
-# Reminders
+﻿# Reminders
 
 > Scheduled reminders. I'll notify you via Telegram and show in README.
 
@@ -16,11 +16,10 @@ Examples:
 
 ## Active Reminders
 
-| # | Reminder | Date | Time | Status | Calendar |
-|---|----------|------|------|--------|----------|
-| 1 | Test reminder - system working! | 2026-02-08 | 15:00 | ⏰ pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+-+system+working!&dates=20260208T180000Z/20260208T183000Z&details=From+Second+Memory) |
-| 2 | Test reminder 2 - immediate check | 2026-02-08 | 15:30 |  pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+2+-+immediate+check&dates=20260208T183000Z/20260208T190000Z&details=From+Second+Memory) |
-| 3 | 5km run | 2026-02-21 | 00:00 | ⏰ pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=5km+run&dates=20260221T000000Z/20260221T003000Z&details=From+Second+Memory) |
+| # | Reminder | Date | Time | Status | Calendar | Notes |
+|---|----------|------|------|--------|----------|-------|
+| 1 | Talk with Fabi | 2026-02-09 | 09:00 |  pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Talk+with+Fabi&dates=20260209T120000Z/20260209T123000Z&details=From+Second+Memory) | |
+| 2 | 5 km Race - Porto Novo Night Run | 2026-02-21 | 19:00 |  pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=5+km+Race+-+Porto+Novo+Night+Run&dates=20260221T220000Z/20260222T010000Z&details=From+Second+Memory) | [Details](../archive/5%20km.md) |
 
 ---
 
