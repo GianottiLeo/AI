@@ -6,7 +6,7 @@
 
 ## Reminders
 
-> **1 active reminder**  [View all](reminders/README.md)
+> **4 active reminders**  [View all](reminders/README.md)
 
 ---
 
@@ -63,4 +63,5 @@
 | 2026-02-09 | Archived 5 km race registration | archive/5 km.md |
 | 2026-02-08 | Added 4 backlog tasks | tasks.md |
 | 2026-02-08 | Quick note: Arthur Miller Youtube | inbox.md |
+
 
