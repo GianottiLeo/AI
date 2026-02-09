@@ -4,14 +4,16 @@
 
 ---
 
-## Due Today
+## Reminders
 
-<!-- Auto-updated daily at 9:30 AM BRT -->
+<!-- All active reminders from reminders/README.md -->
 
-| # | Reminder | Time | Calendar |
-|---|----------|------|----------|
-| 1 | Test reminder - system working! | 15:00 | [Add](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+-+system+working!&dates=20260208T180000Z/20260208T183000Z&details=From+Second+Memory) |
-| 2 | Test reminder 2 - immediate check | 15:30 | [Add](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test+reminder+2+-+immediate+check&dates=20260208T183000Z/20260208T190000Z&details=From+Second+Memory) |
+| # | Reminder | Date | Time | Status | Calendar | Notes |
+|---|----------|------|------|--------|----------|-------|
+| 1 | Talk with Fabi | 2026-02-09 | 09:00 |  pending | [Add](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Talk+with+Fabi&dates=20260209T120000Z/20260209T123000Z&details=From+Second+Memory) | |
+| 2 | 5 km Race - Porto Novo Night Run | 2026-02-21 | 19:00 |  pending | [Add](https://calendar.google.com/calendar/render?action=TEMPLATE&text=5+km+Race+-+Porto+Novo+Night+Run&dates=20260221T220000Z/20260222T010000Z&details=From+Second+Memory) | [Details](archive/5%20km.md) |
+
+> [Full list](reminders/README.md)
 
 ---
 
@@ -65,7 +67,8 @@
 
 | Date | Item | Location |
 |------|------|----------|
-| 2026-02-08 | Test reminder added | reminders/README.md |
-| 2026-02-08 | Added reminders system | reminders/README.md |
+| 2026-02-09 | Added 5 km race reminder | reminders/README.md |
+| 2026-02-09 | Added Notes column to reminders | reminders/README.md |
+| 2026-02-09 | Archived 5 km race registration | archive/5 km.md |
 | 2026-02-08 | Added 4 backlog tasks | tasks.md |
 | 2026-02-08 | Quick note: Arthur Miller Youtube | inbox.md |
