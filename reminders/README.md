@@ -1,4 +1,4 @@
-﻿# Reminders
+# Reminders
 
 > Scheduled reminders. I'll notify you via Telegram and show in README.
 
@@ -12,6 +12,7 @@
 | 2 | Sprint Planning | 2026-02-10 | 11:30 |  pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Sprint+Planning&dates=20260210T143000Z/20260210T153000Z&details=From+Second+Memory) | |
 | 3 | Data Analytics Everchain | 2026-02-10 | 16:30 | ⏰ pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Data+Analytics+Everchain&dates=20260210T193000Z/20260210T203000Z&details=From+Second+Memory) | |
 | 4 | NF Fábio EHS | 2026-02-11 | 12:00 |  pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=NF+Fabio+EHS&dates=20260211T150000Z/20260211T153000Z&details=From+Second+Memory) | |
+| 5 | Carri Review | 2026-02-19 | 10:30 | ⏰ pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Carri+Review&dates=20260219T133000Z/20260219T140000Z&details=From+Second+Memory) | |
 
 ---
 
