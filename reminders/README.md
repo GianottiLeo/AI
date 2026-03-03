@@ -8,7 +8,6 @@
 
 | # | Reminder | Date | Time | Status | Calendar | Notes |
 |---|----------|------|------|--------|----------|-------|
-| 1 | 5 km Race - Porto Novo Night Run | 2026-02-21 | 19:00 | ⏰ pending | [Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=5+km+Race+-+Porto+Novo+Night+Run&dates=20260221T220000Z/20260222T010000Z&details=From+Second+Memory) | [Details](../archive/5%20km.md) |
 
 ---
 
@@ -16,7 +15,7 @@
 
 | # | Reminder | Date | Time | Status | Notes |
 |---|----------|------|------|--------|-------|
-| 1 | Talk with Fabi | 2026-02-09 | 09:00 |  done | |
+
 
 ---
 
